@@ -16,11 +16,11 @@ import ComingSoonScreen from '../screens/ComingSoonScreen';
 
 const Drawer = createDrawerNavigator();
 
-// ✅ مكون القائمة المخصص
+
 function CustomDrawerContent({ navigation }) {
   const { currentUser, logout } = useAuth();
 
-  // ✅ عناصر القائمة مع الأيقونات
+  //  عناصر القائمة 
   const menuItems = [
     { id: 'Home', label: 'الرئيسية', icon: 'home' },
     { id: 'MyBookings', label: 'حجوزاتي', icon: 'calendar' },
@@ -51,10 +51,10 @@ function CustomDrawerContent({ navigation }) {
           </Text>
         </View>
 
-        {/*  خط فاصل */}
+
         <View style={styles.divider} />
 
-        {/*  قائمة العناصر */}
+
         <View style={styles.menuSection}>
           {menuItems.map((item) => (
             <TouchableOpacity
@@ -140,7 +140,7 @@ export default function MainDrawerNavigator() {
   );
 }
 
-// ✅ الأنماط
+
 const styles = StyleSheet.create({
   drawerContainer: {
     flex: 1,
@@ -231,8 +231,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     marginTop: 4,
     marginBottom: 8,
-    backgroundColor: COLORS.danger + '10', // شفافية خفيفة
-  },
+    backgroundColor: COLORS.danger + '10', 
   logoutText: {
     fontSize: 16,
     color: COLORS.danger,

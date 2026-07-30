@@ -157,7 +157,7 @@ export default function RoomsScreen() {
         contentContainerStyle={styles.scrollContent}>
         {filteredRooms.length > 0 ? (
           filteredRooms.map((room) => (
-            //استخدام مكون RoomCard الجاهز بدلاً من الكود الطويل
+
             <RoomCard
               key={room.id}
               room={room}
